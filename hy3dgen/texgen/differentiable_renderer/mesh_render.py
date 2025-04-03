@@ -25,7 +25,8 @@ from .camera_utils import (
     get_orthographic_projection_matrix,
     get_perspective_projection_matrix,
 )
-from .mesh_processor import meshVerticeInpaint
+# from .mesh_processor import meshVerticeInpaint
+from mesh_processor import meshVerticeInpaint # CUSTOM: Forced to run C++ code and make text generation faster (https://github.com/Tencent/Hunyuan3D-2/issues/143#issuecomment-2736399237)
 from .mesh_utils import load_mesh, save_mesh
 
 
